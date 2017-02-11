@@ -1,0 +1,7 @@
+{
+  "name": "dummy-app",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  }
+}
