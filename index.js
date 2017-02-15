@@ -4,6 +4,7 @@ const port = process.env.PORT || 8081;
 
 const server = http.createServer((request, response) => {
   process.env.VERSION=1;
+  console.log(request.path.url);
   response.end(JSON.stringify(process.env, null, '  '));
 });
 
