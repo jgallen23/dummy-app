@@ -3,7 +3,7 @@ const http = require('http');
 const port = process.env.PORT || 8081;
 
 const server = http.createServer((request, response) => {
-  process.env.VERSION=7;
+  process.env.VERSION=8;
   console.log('incoming');
   response.end(JSON.stringify(process.env, null, '  '));
 });
